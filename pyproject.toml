@@ -34,7 +34,7 @@ addopts = '-p no:warnings'
 
 [tool.taskipy.tasks]
 run = "fastapi dev fastapi_zero/app.py"
-test = "pytest -s -v --cov=fast_zere -vv"
+test = "pytest -s -v --cov=fastapi_zero -vv"
 pre_test = "task lint"
 post_test = "coverage html"
 lint = "ruff check . ; ruff check . --diff"
